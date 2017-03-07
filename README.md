@@ -3,8 +3,14 @@ For the demonstration of this tool, please see `RESULTS.dm`. For the summary of 
 
 
 # 1. Preparation #
-If you would rather use the existing json data that I provide than to obtain data first hand, you can skip 1.1 through 1.3.
-
+If you would rather use the existing json data that I provide than to obtain data first hand, you can skip 1.1 through 1.3. In that case, comment out the following part in `makelists.py`(line 51-55):
+```
+#import data from MongoDB
+connect = MongoClient('localhost', 27017)
+db = connect.orbituary
+tweetdata = db.tweetdata
+meta = db.metadata
+```
 ## 1.1 Obtain a Twitter API account and note your consumer_key, consumer_secret, access_token, and access_secret ##
 Follow the instruction at
 https://dev.twitter.com/ .
@@ -33,6 +39,12 @@ Run `gettweets.py`
 This gets the tweets that contains the word "死去"("death" or "die") and saves them into `db.tweetdata` in json form.
 This is modified from a [code](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2) written by [kenmatsu4](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2).
 See [here](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2) for the structure of the data.
+- If you choose to use this code to obtain data,  comment out the following part in `makelists.py`(line 57-59)
+```
+#Use the existing json file, orb030117.json 
+with open('strings.json') as data:
+    tweetdata = json.load(data)
+```
 
 # 3. Make lists #
 Run `makelists.py`
