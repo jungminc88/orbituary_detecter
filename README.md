@@ -22,15 +22,16 @@ In order to access MongoDB from python, we need pymongo:
  ```
 # 2.  Obtain Tweets #
 Run `gettweet.py`
-This gets the tweets that contains the word "死去"("death" or "die") and saves them into `<db.tweetdata>`.
+This gets the tweets that contains the word "死去"("death" or "die") and saves them into `db.tweetdata`.
 
 # 3. Make lists #
 Run `twparse.py`
 This code parses each tweet, extracts person names, and make a list of person names that appear in the data, as well as a list of cooccurrences, both with counts.
+The user can determine the minimum number of counts for being deemed "famous".
 
 # 4. Test #
-The list is expected to contain all the names of notable people who died in the period (low Type 1 error).
-However, it does contain a lot of names of who are not dead (or non-person names like band names).
+The list is expected to contain all the names of notable people who died in the period. (very small risk of Type 1 error)
+However, it does contain a lot of names of who are not dead (or non-person names like band names). (large risk of Type 2 error)
 To reduce the wrong names from the list, run `cooccurrence.py`
 
 
