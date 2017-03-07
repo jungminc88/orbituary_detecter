@@ -1,6 +1,7 @@
 # 1. List of all names as a result of `twparse.py`
 > > print pp(  collections.Counter(list_names).most_common()  ) 
 
+
 >[   (u'ムッシュかまやつ', 119955),
     (u'JP', 4036),
     (u'釜萢', 2406),
@@ -175,6 +176,8 @@
 
 # 2. List of all cooccurrences of names as a result of `twparse.py`
 > > print pp(  collections.Counter(list_cooccurrence).most_common()  ) 
+
+
 > [   ((u'ムッシュかまやつ',), 84435),
     ((), 5235),
     ((u'ムッシュかまやつ', u'JP'), 3780),
@@ -247,6 +250,8 @@
     
 # 3. Counts of pair-wise cooccurrences as a result of `pair_coocc.py`
 > > list_candidates = [u'ムッシュかまやつ', u'綾小路翔',u'堺正章']
+
+
 > {   (u'ムッシュかまやつ', u'堺正章'): 944,
     (u'ムッシュかまやつ', u'綾小路翔'): 873,
     (u'堺正章', u'ムッシュかまやつ'): 944,
