@@ -1,7 +1,9 @@
-# 0. # 4. List of all people who passed away in (or around) the time frame, according to the newspaper.
+As you can see below, `twparse.py` alone can give you a pretty low error rate unless you have an unusually low standard for 'famous'. But even then, running `pairwise_coocc.py` can give the error rate close to zero.
+
+# 0. List of all people who passed away in (or around) the time frame, according to the newspaper.
 - Feb.28 饗庭孝男　(scholar of French literature)
 - Mar. 1 横井茂   (choleographer)
--        林京子    (novelist)
+- Mar. 1 林京子    (novelist)
 - Mar. 1 ムッシュかまやつ (singer)
 - Mar. 2 寺沢則忠 (former vice-president of a bank)
 
