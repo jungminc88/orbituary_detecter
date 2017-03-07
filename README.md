@@ -4,7 +4,7 @@ For the demonstration of this tool, see `RESULTS.dm`. For the summary of the app
 
 
 # 1. Preparation #
-If you would rather use the existing json data that I provide, you can skip 1.1 through 1.3.
+If you would rather use the existing json data that I provide than to obtain data first hand, you can skip 1.1 through 1.3.
 
 ## 1.1 Obtain a Twitter API account and note your consumer_key, consumer_secret, access_token, and access_secret ##
 Follow the instruction at
