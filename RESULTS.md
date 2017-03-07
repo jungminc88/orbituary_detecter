@@ -62,7 +62,7 @@ The user can determine the threshold for 'famous', but it would safe to say if a
 
 Please note that this is a tough evaluation against the tool. 
 Common sense is that a famous person is someone who gets more than a couple of thousand mentions when passing away. 
-If we raise the threshold to 2000, then,
+If we **raise the threshold to 2000**, then,
 
 >**Type 2 error rate = 2/6 = 0.33**.
 
@@ -90,9 +90,11 @@ Again, let's be generous and look at the cooccurrences of counts more than 500.
    
 We then immediately realize that the appearances of 'Me' almost always coincide with 'ムッシュかまやつ', since adding the counts 
 (u'Me', u'釜萢', u'ムッシュかまやつ', u'ひろし', u'弘'), 835) and (u'Me', u'ムッシュかまやつ'), 796) is close to (u'Me', 2018).
-The same can be said to 'JP', '綾小路翔' etc. Now we can conlude that these are not the names of the deceased, but the friends of 'ムッシュかまやつ' or random bits of URLs and such, which gives us,
-**Type 2 error rate = 0**.
-Below is the systematic way of making this inference.
+The same can be said to 'JP', '綾小路翔' etc. Now we can conlude that these are not the names of the deceased, but the friends of 'ムッシュかまやつ' or random bits of URLs and such, which gives us
+
+>**Type 2 error rate = 0**.
+
+**Below is the systematic way of making this inference.**
 
 
 # 3. Counts of pair-wise cooccurrences as a result of `finetune.py` #
