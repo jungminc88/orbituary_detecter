@@ -28,5 +28,6 @@ Below is the summary for how I approached the problem and answers to the main qu
   - With the above data from Mar 1, the Type 1 error rate was 0, while the Type 2 error rate was large.
   - The cause of the Type 2 errors are:
     - a) The problem in the dictionary; The dictionary contains band names and group names and also label them as person name, hencee wrongly recognizes bits of URLs or other strings such as "JP" and "Me" as a person name. You might want to eliminate these short alphabet names from the dictionary, but since Japan has a lot of famous people whose name consists of a few alphabets, it is not wise to eliminate these.
+      - I tried to make a dictionary by scraping article pages of Wikipedia under the catergory "Japanese people", but this category also contains band and group names. 
     - b) When a famous person comments on the deceased person, that person's name will also come up a lot in the data.
   - To deal with the problem (b), this tool contains a pairwise cooccurrence counter. After you remove the non person names and irrelevant names as much as possible, you count the pairwise cooccurrences of the names is the list. If a name A occur almost exclusively with another name B, you can assume that A only appears in relation to the deceased person B and A is not deceased.
