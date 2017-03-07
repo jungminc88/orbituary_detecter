@@ -17,7 +17,8 @@ As you can see below, `makelists.py` alone can give you a pretty low error rate 
 This list is sorted in the descending order by the number of counts.
 
 All the names in the newspaper orbituaries appear in the list, although (u'饗庭孝男', 30) has a rather small count, 30, which is OK given his limited recognition outside of the circle of French literature academics.
-Hence **Type 1 error rate = 0**.
+Hence 
+> **Type 1 error rate = 0**.
 
 
 The user can determine the threshold for 'famous', but it would safe to say if a famous person dies, he or she gets more than a couple of thousand mentions in a day. So, let's be generous and look at the entries with more than 1000 counts. 
@@ -56,11 +57,14 @@ The user can determine the threshold for 'famous', but it would safe to say if a
 - (u'いとうまい子', 1054) Wrong! A Japanese actress whose brother died in a tragedy.
 - (u'林京子', 1039) Correct! A Japanese author.
 
-**Type 2 error rate = 7.5/14 = 0.53**.
+
+>**Type 2 error rate = 7.5/14 = 0.53**.
+
 Please note that this is a tough evaluation against the tool. 
 Common sense is that a famous person is someone who gets more than a couple of thousand mentions when passing away. 
 If we raise the threshold to 2000, then,
-**Type 2 error rate = 2/6 = 0.33**.
+
+>**Type 2 error rate = 2/6 = 0.33**.
 
 # 2. List of all cooccurrences of names as a result of `makelists.py` #
 Again, let's be generous and look at the cooccurrences of counts more than 500.
