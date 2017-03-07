@@ -1,4 +1,7 @@
 # 1. List of all names as a result of `twparse.py`
+
+Aside from 'JP' and 'Me' which are irrelevant, the top eight entries are different names of a same person, 'ムッシュかまやつ', a very famous Japanese singer. 
+
 > > print pp(  collections.Counter(list_names).most_common()  ) 
 
 
@@ -260,3 +263,10 @@
     (u'綾小路翔', u'ムッシュかまやつ'): 873,
     (u'綾小路翔', u'堺正章'): 0}
 
+
+# 4. List of all people who passed away in (or around) the time frame, according to the newspaper.
+- Feb.28 饗庭孝男　(scholar of French literature)
+- Mar. 1 横井茂   (choleographer)
+-        林京子    (novelist)
+- Mar. 1 ムッシュかまやつ (singer)
+- Mar. 2 寺沢則忠 (former vice-president of a bank)
