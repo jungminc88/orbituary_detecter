@@ -1,5 +1,4 @@
-Detects when a famous person passes away using Twitter data. This is a part of the application for intership at GumGum.
-Below is how to run this tool.
+Detects when a famous person passes away using Twitter data. This page explains how to run this tool.
 For the demonstration of this tool, see `RESULTS.dm`. For the summary of the approach, see `SUMMARY.dm`.
 
 
