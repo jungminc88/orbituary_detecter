@@ -1,4 +1,8 @@
-As you can see below, `twparse.py` alone can give you a pretty low error rate unless you have an unusually low standard for 'famous'. But even then, running `pairwise_coocc.py` can give the error rate close to zero.
+Here, I show a demonstration of the tool.
+
+
+As you can see below, `makelists.py` alone can give you a pretty low error rate unless you have an unusually low standard for 'famous'. But even then, running `finetune.py` can give the error rate close to zero.
+
 
 # 0. List of all people who passed away in (or around) the time frame, according to the newspaper.
 - Feb.28 饗庭孝男　(scholar of French literature)
@@ -8,7 +12,7 @@ As you can see below, `twparse.py` alone can give you a pretty low error rate un
 - Mar. 2 寺沢則忠 (former vice-president of a bank)
 
 
-# 1. List of all names as a result of `twparse.py`
+# 1. List of all names as a result of `makelists.py`
 
 This list is sorted in the descending order by the number of counts.
 
@@ -58,7 +62,7 @@ Common sense is that a famous person is someone who gets more than a couple of t
 If we raise the threshold to 2000, then,
 **Type 2 error rate = 2/6 = 0.33**.
 
-# 2. List of all cooccurrences of names as a result of `twparse.py` #
+# 2. List of all cooccurrences of names as a result of `makelists.py` #
 Again, let's be generous and look at the cooccurrences of counts more than 500.
 
 > > print pp(  collections.Counter(list_cooccurrence).most_common()  ) 
@@ -87,7 +91,7 @@ The same can be said to 'JP', '綾小路翔' etc. Now we can conlude that these 
 Below is the systematic way of making this inference.
 
 
-# 3. Counts of pair-wise cooccurrences as a result of `pair_coocc.py` #
+# 3. Counts of pair-wise cooccurrences as a result of `finetune.py` #
 If person A occurs mostly with person B but not with others while person B occurs with others,
 then we can infer that B is the deceased person and A comes up only in relation to B, hence eliminate A from the list.
 
