@@ -15,9 +15,4 @@
   - I measure the tool's performance by the rate of Type 1 errors (missing the correct names) and Type 2 errors (including wrong names) as follows:
     - Type 1 error rate = (number of missing correct names in the returned list) / (number of correct names)
     - Type 2 error rate = (number of wrong names in the returned list) / (length of the returned list)
-  - With the above data from Mar 1, the Type 1 error rate was 0, while the Type 2 error rate was large.
-  - The cause of the Type 2 errors are:
-    - a) The problem in the dictionary; The dictionary contains band names and group names, and also label them as person name, hencee wrongly recognizes bits of URLs or other strings such as "JP" and "Me" as a person name. You might want to eliminate these short names consisting only of alphabets and numerals, but they may well be genuine person names, so there seems to be no easy way to solve this problem.
-      - I also tried to make a dictionary by scraping article pages of Wikipedia under the catergory "Japanese people", but this category also contains band and group names. 
-    - b) When a famous person makes comments on the deceased person, that person's name will also come up a lot in the data.
-  - To deal with the problem (b), this tool contains a pairwise cooccurrence counter. After you remove the non person names and irrelevant names as much as possible, you count the pairwise cooccurrences of the names is the list. If a name A occur almost exclusively with another name B, you can assume that A only appears in relation to the deceased person B and A is not deceased.
+  - As shown in `RESULTS.dm`, Type 1 error rate is close to zero. Type 2 error rate is also low with usual standard for 'famous'. Even if the user chooses a very broad standard for 'famous', after eliminating names that are likely to be wrong using `finetune.py`, Type 2 error is close to zero.
