@@ -30,8 +30,9 @@ In order to access MongoDB from python, we need pymongo:
 
 # 2.  Obtain tweets #
 Run `gettweets.py`
-This gets the tweets that contains the word "死去"("death" or "die") and saves them into `db.tweetdata`.
+This gets the tweets that contains the word "死去"("death" or "die") and saves them into `db.tweetdata` in json form.
 This is modified from a [code](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2) written by [kenmatsu4](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2).
+See [here](http://qiita.com/kenmatsu4/items/23768cbe32fe381d54a2) for the structure of the data.
 
 # 3. Make lists #
 Run `makelists.py`
