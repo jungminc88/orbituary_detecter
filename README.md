@@ -3,7 +3,7 @@ For the demonstration of this tool, please see `RESULTS.dm`. For the summary of 
 
 
 # 1. Preparation #
-If you would rather use the existing json data that I provide than to obtain data first hand, you can skip 1.1 through 1.3. In that case, comment out the following part in `makelists.py`(line 51-55):
+If you would rather use the existing [json data](https://www.transfernow.net/13cj82i9x61w) that I provide than to obtain data first hand, you can skip 1.1 through 1.3. In that case, comment out the following part in `makelists.py`(line 51-55):
 ```
 #import data from MongoDB
 connect = MongoClient('localhost', 27017)
