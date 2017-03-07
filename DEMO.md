@@ -1,6 +1,7 @@
 # 1. List of all names as a result of `twparse.py`
 
 Aside from 'JP' and 'Me' which are irrelevant, the top eight entries are different names of a same person, 'ムッシュかまやつ', a very famous Japanese singer. 
+It contains people who made comments on the deceased, people who passed away a while ago, and people whose family members died. 
 
 > > print pp(  collections.Counter(list_names).most_common()  ) 
 
