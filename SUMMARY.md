@@ -4,7 +4,7 @@
   - This tool draws data from Twitter API.
   
 - How does your tool identify its target strings?
-  - To extract person names from tweets, I used [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd/wiki/Home).
+  - To extract person names from tweets, I used [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd/wiki/Home). As shown in `RESULT.dm`, this dictionary detects famous names as well as strings that are likely to be Japanese names, seemingly at a 100% rate.
   
 - How would you define and quantify 'famous'?
   - In this tool, it is measured by the number of times the name appears in the tweet data.
