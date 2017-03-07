@@ -39,9 +39,7 @@ This code parses each tweet, extracts person names, and make a list of person na
 
 
 # 4. Fine-tuning lists #
-The list is expected to contain all the names of notable people who died in the period. (very small risk of Type 1 error)
-However, it does contain a lot of names of who are not dead (or non-person names like band names). (large risk of Type 2 error)
-To reduce the wrong names from the list, run `finetune.py`
+To reduce the number of wrong names from the list, run `finetune.py`.
 
 
 
