@@ -1,14 +1,4 @@
-Below is the summary for how I approached the problem and answers to the main questions.
-
-# 1. Summary of the data #
-- Data Size
-  - 121478 tweets
-- Time Frame
-  - From 'Wed Mar 01 03:15:41 +0000 2017' to 'Thu Mar 02 03:43:14 +0000 2017' Japan Time
-- Details
-  - Details of the data can be found in `DEMO.md`
-
-# 2. Summary of the approach #
+#  Summary of the approach #
 
 - What are the (online and publicly accessible) sources the tool is using?
   - This tool draws data from Twitter API.
