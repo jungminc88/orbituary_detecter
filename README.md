@@ -2,7 +2,7 @@ Detects when a famous person passes away using Twitter data. This is a part of t
 
 
 # 1. Preparation #
-If you would rather use the existing data that I retrieved, you can skip 1.1 through 1.3.
+If you would rather use the existing json data that I provide, you can skip 1.1 through 1.3.
 
 ## 1.1 Obtain a Twitter API account and note your consumer_key, consumer_secret, access_token, and access_secret ##
 Follow the instruction at
@@ -21,6 +21,12 @@ In order to access MongoDB from python, we need pymongo:
  ```
  pip install pymongo
  ```
+ 
+## 1.4 Install Mecab and mecab-ipadic-NEologd ##
+- [Install Mecab](http://taku910.github.io/mecab/)
+- [Install mecab-ipadic-NEologd (Neologism dictionary for MeCab)](https://github.com/neologd/mecab-ipadic-neologd)
+
+
 # 2.  Obtain Tweets #
 Run `gettweet.py`
 This gets the tweets that contains the word "死去"("death" or "die") and saves them into `db.tweetdata`.
