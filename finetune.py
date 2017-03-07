@@ -7,12 +7,8 @@ Created on Mon Mar  6 19:40:37 2017
 """
 import collections
 
-#First, determine the list of candidates for correct names:
-
-#list_candidates = collections.Counter(list_names).keys()
-
-#You can use the above list as the list of candidates, but for reducing the run-time,
-#I recommend reducing the elements in list_canditates as much as possible.
+#First, determine the list of candidates for correct names according to your standard for 'famous':
+ 
 list_candidates = [u'ムッシュかまやつ', u'綾小路翔',u'堺正章']
 
 #Next, for every possible pair, count the number of cooccurrence:
