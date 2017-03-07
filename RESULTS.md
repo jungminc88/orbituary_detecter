@@ -1,5 +1,5 @@
 # 1. List of all names as a result of `twparse.py`
-> print pp(  collections.Counter(list_names).most_common()  ) 
+> > print pp(  collections.Counter(list_names).most_common()  ) 
 
 >[   (u'ムッシュかまやつ', 119955),
     (u'JP', 4036),
@@ -170,5 +170,5 @@
     (u'QN', 31),
     (u'BG', 31),
     (u'二郎', 30),
-    (u'饗庭孝男', 30)]
+    (u'饗庭孝男', 30)  "The rest is omitted."
     
