@@ -1,10 +1,16 @@
 Here, I show a demonstration of the tool.
+First, I obtained the following data by running `gettweets.py`:
+
+-Data Size
+    -121478 tweets
+-Time Frame
+    -From 'Wed Mar 01 03:15:41 +0000 2017' to 'Thu Mar 02 03:43:14 +0000 2017' Japan Time
 
 
 As you can see below, `makelists.py` alone can give you a pretty low error rate unless you have an unusually low standard for 'famous'. But even then, running `finetune.py` can give the error rate close to zero.
 
 
-# 0. List of all people who passed away in (or around) the time frame, according to the newspaper.
+# 0. List of all people who passed away in (or around) the time frame, according to the [newspaper](http://www.asahi.com/obituaries/).
 - Feb.28 饗庭孝男　(scholar of French literature)
 - Mar. 1 横井茂   (choleographer)
 - Mar. 1 林京子    (novelist)
