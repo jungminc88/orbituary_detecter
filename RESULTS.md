@@ -1,6 +1,7 @@
 # 1. List of all names as a result of `twparse.py`
 > print pp(  collections.Counter(list_names).most_common()  ) 
-[   (u'ムッシュかまやつ', 119955),
+
+>[   (u'ムッシュかまやつ', 119955),
     (u'JP', 4036),
     (u'釜萢', 2406),
     (u'スパイダース', 2369),
