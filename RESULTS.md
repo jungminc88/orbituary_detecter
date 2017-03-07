@@ -27,7 +27,7 @@ Hence
 > **Type 1 error rate = 0**.
 
 
-The user can determine the threshold for 'famous', but it would safe to say if a famous person dies, he or she gets more than a couple of thousand mentions in a day. So, let's be generous and look at the entries with more than 1000 counts. 
+The user can determine the threshold for 'famous', but it would be safe to say that if a famous person dies, he or she gets more than a couple of thousand mentions in a day. So, let's be generous and look at the entries with more than 1000 counts. 
 
 
 > > print pp(  collections.Counter(list_names).most_common()  ) 
@@ -66,7 +66,7 @@ The user can determine the threshold for 'famous', but it would safe to say if a
 
 >**Type 2 error rate = 7.5/14 = 0.53**.
 
-Please note that this is a tough evaluation against the tool. 
+Please note that this is a harsh grading against the tool. 
 Common sense is that a famous person is someone who gets more than a couple of thousand mentions when passing away. 
 If we **raise the threshold to 2000**, then,
 
