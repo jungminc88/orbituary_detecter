@@ -1,10 +1,10 @@
 Here, I show a demonstration of the tool.
 First, I obtained the following data by running `gettweets.py`:
 
--Data Size
-    -121478 tweets
--Time Frame
-    -From 'Wed Mar 01 03:15:41 +0000 2017' to 'Thu Mar 02 03:43:14 +0000 2017' Japan Time
+- Data Size
+    - 121478 tweets
+- Time Frame
+    - From 'Wed Mar 01 03:15:41 +0000 2017' to 'Thu Mar 02 03:43:14 +0000 2017' Japan Time
 
 
 As you can see below, `makelists.py` alone can give you a pretty low error rate unless you have an unusually low standard for 'famous'. But even then, running `finetune.py` can give the error rate close to zero.
