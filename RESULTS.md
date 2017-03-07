@@ -251,6 +251,7 @@
 # 3. Counts of pair-wise cooccurrences as a result of `pair_coocc.py`
 > > list_candidates = [u'ムッシュかまやつ', u'綾小路翔',u'堺正章']
 
+> > print pp(cooccurrence)
 
 > {   (u'ムッシュかまやつ', u'堺正章'): 944,
     (u'ムッシュかまやつ', u'綾小路翔'): 873,
