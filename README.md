@@ -1,7 +1,8 @@
 Detects when a famous person passes away using Twitter data. This is a part of the application for intership at GumGum.
 
 
-# 1. Preparation: Access Twitter API and MongoDB #
+# 1. Preparation #
+If you would rather use the existing data that I retrieved, you can skip 1.1 through 1.3.
 
 ## 1.1 Obtain a Twitter API account and note your consumer_key, consumer_secret, access_token, and access_secret ##
 Follow the instruction at
