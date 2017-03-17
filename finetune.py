@@ -10,7 +10,7 @@ import numpy as np
 #First, determine the list of candidates for correct names:
 #dict_temp = dict(collections.Counter(list_names).most_common())
 #list_candidates = sorted(dict_temp, key=.get,reverse=True)[:10]
-#list_candidates = collections.Counter(list_names).keys()
+
 
 #You can use the above list as the list of candidates, but for reducing the run-time,
 #I recommend reducing the elements in list_canditates as much as possible.
